@@ -8,12 +8,11 @@
 		 OR email LIKE '%$busqueda%')) ORDER BY nombre ASC LIMIT $inicio,$registros";
 
 		$consulta_total="SELECT COUNT(usuario_id) FROM usuarios WHERE 
-		usuario_id!='".$_SESSION['usuario_id']."') AND (nombre LIKE '%$busqueda%' OR apellido LIKE 
-		'%$busqueda%' OR usuario LIKE '%$busqueda%' OR email LIKE '%$busqueda%')";
+		((usuario_id != '".$_SESSION['usuario_id']."') AND (nombre LIKE '%$busqueda%' OR apellido LIKE '%$busqueda%' OR usuario LIKE '%$busqueda%' OR email LIKE '%$busqueda%' ))";
 
 	}else{
 
-		$consulta_datos="SELECT * FROM usuarios WHERE usuario_id!='".$_SESSION['usuario_id']."' 
+		$consulta_datos="SELECT * FROM usuarios WHERE usuario_id != '".$_SESSION['usuario_id']."' 
 		ORDER BY nombre ASC LIMIT $inicio,$registros";
 
 		$consulta_total="SELECT COUNT(usuario_id) FROM usuarios WHERE 

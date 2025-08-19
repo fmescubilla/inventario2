@@ -16,10 +16,10 @@
         }
     }
    
-   $nombre="carlos";
-   if(verificar_datos("[a-zA-Z]{6,10}",$nombre)){
-    echo "Los datos no coinciden";
-   }
+   //$nombre="carlos";
+   //if(verificar_datos("[a-zA-Z]{6,10}",$nombre)){
+    //echo "Los datos no coinciden";
+   //}
 
    #limpiar cadenas 
    function limpiar_cadena($cadena){
