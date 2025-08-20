@@ -6,6 +6,7 @@
 <div class="container pb-6 pt-6">  
     <?php
         require_once "./php/main.php";
+        
 
         # Eliminar usuario #
         if(isset($_GET['user_id_del'])){

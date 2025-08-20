@@ -43,8 +43,9 @@ if(in_array($modulo_buscador, $modulos)){
     }
 
     if(isset($_POST['eliminar_buscador'])){
-           
-
+          unset($_SESSION[$modulo_buscador]);
+          header("Location: index.php?vista=$modulos_url", true,303);
+          exit();
     }
 }else{
  echo '<div class="notification is-danger is-light">
