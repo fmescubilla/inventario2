@@ -50,7 +50,7 @@ if($check_user->rowCount()==1){
 				header("Location: index.php?vista=home");
 			}
 
-    	}else{
+    }else{
     		echo '
 	            <div class="notification is-danger is-light">
 	                <strong>¡Ocurrio un error inesperado!</strong><br>
