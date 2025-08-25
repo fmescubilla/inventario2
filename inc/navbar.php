@@ -28,18 +28,19 @@
         <a class="navbar-link">Categorias</a>
 
         <div class="navbar-dropdown">
-          <a class="navbar-item">Nueva Categoria</a>
-           <a class="navbar-item">Lista de Categorias</a>
-            <a class="navbar-item">Buscar Categoria</a>
+          <a class="navbar-item" href="index.php?vista=category_new">Nueva Categoria</a>
+           <a class="navbar-item" href="index.php?vista=category_list">Lista de Categorias</a>
+            <a class="navbar-item"  href="index.php?vista=category_search">Buscar Categoria</a>
         </div>
       </div>
             <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">Productos</a>
 
         <div class="navbar-dropdown">
-          <a class="navbar-item">Nuevo Producto</a>
-           <a class="navbar-item">Lista de Producto</a>
-            <a class="navbar-item">Buscar Producto</a>
+          <a class="navbar-item"  href="index.php?vista=product_new">Nuevo Producto</a>
+           <a class="navbar-item" href="index.php?vista=product_list">Lista de Producto</a>
+             <a class="navbar-item" href="index.php?vista=product_category">Por categoria</a>
+            <a class="navbar-item" href="index.php?vista=product_search">Buscar Producto</a>
         </div>
       </div>
     </div>

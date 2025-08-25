@@ -14,6 +14,3 @@
 
 <?php
 
-echo '<pre>';
-print_r($_SESSION['usuario_id']);
-echo '</pre>';
